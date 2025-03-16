@@ -8,15 +8,15 @@ export default defineConfig({
 		starlight({
 			title: '云上翱祥 | AO-X', // 设置网站标题
 			description: '让每一份爱心触手可及', // 设置网站描述
-			//logo: { // 在导航栏中设置一个 logo 图片
-				//light: './src/assets/winx-light.svg', // 导航栏中浅色模式 logo 图片
-				//dark: './src/assets/winx-dark.svg',}, // 导航栏中深色模式 logo 图片
+			logo: { // 在导航栏中设置一个 logo 图片
+				light: './src/assets/ao-x-light.svg', // 导航栏中浅色模式 logo 图片
+				dark: './src/assets/ao-x-dark.svg',}, // 导航栏中深色模式 logo 图片
 			tableOfContents: { // 配置每个页面右侧显示的目录
 				minHeadingLevel: 2, // 从 <h2> 开始
 				maxHeadingLevel: 4, }, // 到 <h4> 结束
-			/*editLink: { // 启用 “编辑此页” 链接
+			editLink: { // 启用 “编辑此页” 链接
 				baseUrl: 'https://github.com/ao-x/www.ao-x.cn/edit/develop/', // 设置 “编辑此页” 链接
-			},*/
+			},
 			locales: { // 设置多语言
 				root: { // 不用设置语言目录
 					label: '简体中文', // 设置网站支持简体中文作为语言
@@ -26,7 +26,7 @@ export default defineConfig({
 			},
 			defaultLocale: 'zh-CN', // 为网站设置简体中文作为默认语言
 			social: { // 社交媒体账户详情
-				github: 'https://github.com/winx-ipfs/Mirror-Web', // 添加 GitHub 社交媒体账户详情
+				github: 'https://github.com/ao-x/www.ao-x.cn/', // 添加 GitHub 社交媒体账户详情
 			},
 			// customCss: [ // 使用 CSS 文件来自定义 Starlight 网站的外观和风格
 			// 		'./src/custom-styles.css', // 使用本地css
@@ -43,7 +43,16 @@ export default defineConfig({
 					tag: 'link',
 					attrs: {
 						rel: "sitemap",
-						href: '/sitemap-index.xml',
+						href: "/sitemap-index.xml",
+						type: "application/xml",
+					},
+				},
+				{
+					tag: 'link',
+					attrs: {
+						rel: "sitemap",
+						href: "/sitemap-0.xml",
+						type: "application/xml",
 					},
 				},
 				{
