@@ -62,7 +62,9 @@ export default defineConfig({
 				// SocialLinks: './src/components/MySocialLinks.astro',
 			},
 			plugins: [ // 使用自定义插件扩展 Starlight
-				starlightThemeFlexoki(), // 使用 starlight-theme-flexoki 主题
+				starlightThemeFlexoki({
+					accentColor: "cyan", // 设置主题颜色 "red" | "orange" | "yellow" | "green" | "cyan" | "blue" | "purple" | "magenta"
+				}),// 使用 starlight-theme-flexoki 主题
 			],
 			credits: true, // 启用网站页脚显示 “基于 Starlight 构建” 的链接。
 			sidebar: [ // 配置网站的侧边栏导航项目

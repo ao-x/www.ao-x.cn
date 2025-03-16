@@ -1,3 +1,54 @@
 ---
 title: 慕讯公益加速器
+banner:
+  content: |
+    我们提出了游戏加速器开源计划
+    <a href="https://www.bilibili.com/video/BV1YhwkezEtV/">点击查看！</a>
 ---
+import { Card, CardGrid, LinkCard, Badge } from '@astrojs/starlight/components';
+import SitesMXFREE from '/src/components/sites-mxfree.astro';
+
+## 链接
+
+<CardGrid>
+    <LinkCard title="官方网站" href="https://mxfree.ao-x.ac.cn/" />
+</CardGrid>
+
+## 已提供的支持
+
+<Badge text="域名" variant="note" />
+<Badge text="云服务" variant="success" />
+<Badge text="网页搭建" variant="tip" />
+<Badge text="技术支持" variant="caution" />
+<Badge text="团队管理" variant="danger" />
+<Badge text="数据库" variant="note" />
+<Badge text="文件分发" variant="success" />
+<Badge text="防御" variant="tip" />
+<Badge text="CDN域名" variant="caution" />
+<Badge text="全栈开发" variant="danger" />
+<Badge text="客户服务" variant="note" />
+<Badge text="资金支持" variant="success" />
+<Badge text="代码仓库" variant="tip" />
+<Badge text="流水线自动化" variant="caution" />
+<Badge text="代码证书" variant="danger" />
+
+## 预览
+
+<SitesMXFREE />
+
+## 介绍
+
+<CardGrid stagger>
+    <Card title="慕讯" icon="pencil">
+        慕讯是一个基于提供公益加速器的团队，提供堪比付费加速器的免费服务。
+    </Card>
+    <Card title="功能" icon="add-document">
+        慕讯目前上线了慕讯公益免费加速器。
+    </Card>
+    <Card title="使用" icon="setting">
+        慕讯提供了简单易用的界面，让用户能够免费的轻松游戏。
+    </Card>
+    <Card title="支持" icon="open-book">
+        慕讯目前支持 Windows XP 至 Windows 12 平台。
+    </Card>
+</CardGrid>
